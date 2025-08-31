@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="container contact-section" aria-labelledby="contact-heading">
+      <div class="intro">
+        <h1 id="contact-heading" class="title">faithlife international college</h1>
+        <p class="subtitle">Oye-Ekiti, Ekiti State, Nigeria.</p>
+      </div>
+
+      <div class="content-grid">
+
+        <div class="panel form-panel">
+          <form id="contactForm" class="contact-form" novalidate aria-describedby="form-status">
+
+            <div class="grid-2">
+              <div class="field">
+                <label for="firstName">First name</label>
+                <input id="firstName" name="firstName" type="text" inputmode="text" autocomplete="given-name" required aria-describedby="firstNameError">
+                <span id="firstNameError" class="error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="lastName">Last name</label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" required aria-describedby="lastNameError">
+                <span id="lastNameError" class="error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="field">
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email" inputmode="email" placeholder="abc@gmail.com" aria-describedby="emailError">
+                <span id="emailError" class="error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="field">
+                <label for="number">Phone Number</label>
+                <input id="phone" name="phone" type="tel" placeholder="(e.g. 09017447580)"aria-describedby="phoneError">
+                <span id="phoneError" class="error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Reason for Contact</label>
+              <textarea id="message" name="message" rows="6" required aria-describedby="messageError"></textarea>
+              <span id="messageError" class="error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="actions">
+              <button id="submitBtn" class="cta" type="submit">Contact Us</button>
+              <p class="privacy">By submitting this form, I agree to the <a href="#" tabindex="0">privacy policy</a>.</p>
+            </div>
+
+            <div id="form-status" class="visually-hidden" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="panel testimonial" aria-labelledby="testimonial-title">
+          <div class="img">
+            <img src="FaithLife.img.jpg" alt="" height="100%" width="100%">
+          </div>
+            <div class="author-meta">
+              <div class="name">FaithLife International College</div>
+              <div class="role">"equipping for godly leadership"</div>
+            </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
