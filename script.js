@@ -105,3 +105,32 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("form-status").textContent = "Form submitted successfully.";
   });
 });
+
+ScrollReveal().reveal('.reveal', {
+  distance: '80px',      
+  origin: 'bottom',      
+  duration: 1000,         
+  easing: 'ease-in-out', 
+  interval: 200,         
+  reset: true            
+});
+
+
+ScrollReveal().reveal('.start', {
+  distance: '200px',      
+  origin: 'right',      
+  duration: 1000,         
+  easing: 'ease-in-out', 
+  interval: 200,         
+  reset: true            
+});
+
+
+ScrollReveal().reveal('.left', {
+  distance: '200px',      
+  origin: 'left',      
+  duration: 1000,         
+  easing: 'ease-in-out', 
+  interval: 200,         
+  reset: true            
+});
